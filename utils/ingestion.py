@@ -1,12 +1,13 @@
 import json
 from pathlib import Path
 
-import fitz
+import pymupdf as fitz
 
-# Locate folders relative to this Python file.
+# Locate the source PDFs and generated files relative to this Python file.
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-DOCUMENTS_DIR = PROJECT_ROOT / "data" / "documents"
-EXTRACTED_DIR = PROJECT_ROOT / "data" / "extracted"
+DATA_DIR = PROJECT_ROOT / "data"
+DOCUMENTS_DIR = DATA_DIR
+EXTRACTED_DIR = DATA_DIR / "extracted"
 
 
 def extract_pdf(pdf_path: Path, source_name: str | None = None) -> list[dict]:

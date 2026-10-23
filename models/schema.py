@@ -36,8 +36,17 @@ class Intent(str, Enum):
 
 # ---------- request ----------
 class AskRequest(BaseModel):
-    question: str = Field(min_length=1, max_length=2000)
-    as_of_date: Optional[date] = None  # defaults to today in the API layer
+    question: str = Field(
+        min_length=1,
+        max_length=2000,
+        description="University policy, procedure, or personal-services question.",
+        examples=["What is my CGPA?"],
+    )
+    as_of_date: Optional[date] = Field(
+        default=None,
+        description="Optional date for applying rules; defaults to today.",
+        examples=["2026-10-23"],
+    )
 
 
 # ---------- response building blocks ----------

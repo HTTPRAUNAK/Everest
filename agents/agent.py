@@ -130,6 +130,14 @@ def retrieve_node(state: AgentState) -> dict:
 
 
 def precedence_node(state: AgentState) -> dict:
+    if state.get("intent") == Intent.PERSONAL_DATA:
+        return {
+            "valid_chunks": [],
+            "conflicts": [],
+            "upcoming_changes": [],
+            "precedence_note": "Personal data is answered from the authorized student-data tool.",
+        }
+
     as_of_date = state.get("as_of_date") or today()
     applicable = []
     upcoming = []

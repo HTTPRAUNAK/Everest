@@ -233,8 +233,11 @@ def check_placement_eligibility(ctx: Ctx, assume_cleared_backlogs: int = 0,
     backlogs = max(0, s["active_backlogs"] - cleared)
     actuals = {"placement_min_cgpa": cgpa, "placement_max_backlogs": backlogs}
 
-    checks, rules, missing = [], [], []
+    checks, rules, missing, missing_data = [], [], [], []
     for key, actual in actuals.items():
+        if actual is None:
+            missing_data.append(key)
+            continue
         rule = get_rule(ctx, PARAM[key])
         if not rule:
             missing.append(PARAM[key])
@@ -243,7 +246,7 @@ def check_placement_eligibility(ctx: Ctx, assume_cleared_backlogs: int = 0,
                        "required": f"{rule['operator']} {rule['value']}",
                        "passed": compare(actual, rule["operator"], rule["value"])})
         rules.append(_applied(rule))
-    if not checks:
+    if not checks and not missing_data:
         return _no_rule(", ".join(missing))
 
     assumptions = []
@@ -253,6 +256,12 @@ def check_placement_eligibility(ctx: Ctx, assume_cleared_backlogs: int = 0,
             assumptions.append("CGPA unchanged by clearing the backlog(s)")
     if assume_cgpa is not None:
         assumptions.append(f"CGPA of {cgpa}")
-    result = "UNDETERMINED" if missing else ("ELIGIBLE" if all(c["passed"] for c in checks) else "NOT_ELIGIBLE")
+    result = (
+        "UNDETERMINED"
+        if missing or missing_data
+        else "ELIGIBLE"
+        if all(c["passed"] for c in checks)
+        else "NOT_ELIGIBLE"
+    )
     return ToolResult({"result": result, "checks": checks, "unchecked_rules": missing,
-                       "assumptions": assumptions}, rules)
+                       "missing_data": missing_data, "assumptions": assumptions}, rules)

@@ -3,8 +3,9 @@ import json
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-EXTRACTED_DIR = PROJECT_ROOT / "data" / "extracted"
-CHUNKS_DIR = PROJECT_ROOT / "data" / "chunks"
+DATA_DIR = PROJECT_ROOT / "data"
+EXTRACTED_DIR = DATA_DIR / "extracted"
+CHUNKS_DIR = DATA_DIR / "chunks"
 
 CHUNK_SIZE = 800
 CHUNK_OVERLAP = 150

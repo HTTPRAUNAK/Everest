@@ -21,8 +21,24 @@ venv/
 env/
 ENV/
 
-# Generated and local data
-/data/
+# Generated retrieval data and local model weights
+/data/chroma/
+/data/chroma_db/
+/data/vector_store/
+/data/embeddings/
+/data/models/
+/data/chunks/
+/data/extracted/
+/embeddings/
+/model_cache/
+models/cache/
+models/huggingface/
+*.safetensors
+*.gguf
+*.pt
+*.pth
+*.onnx
+pytorch_model*.bin
 
 # Local environment files and editor settings
 .env
