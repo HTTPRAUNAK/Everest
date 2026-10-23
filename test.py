@@ -7,8 +7,9 @@ from time import perf_counter
 from fastapi import FastAPI, Header
 from fastapi.middleware.cors import CORSMiddleware
 
+from agents.agent import classify_node
 from agents.graph import graph
-from models.schema import AnswerType, AskRequest, AskResponse
+from models.schema import AnswerType, AskRequest, AskResponse, Intent
 from utils.utils import new_trace_id, today
 
 
@@ -36,6 +37,22 @@ app.add_middleware(
 def health() -> dict[str, str]:
     """Basic liveness check for the local FastAPI process."""
     return {"status": "ok"}
+
+
+@app.post("/route")
+def route(request: AskRequest) -> dict[str, str | bool]:
+    """Expose the agent router so the UI can request identity only when needed."""
+    classification = classify_node({"question": request.question})
+    intent = classification["intent"]
+    requires_student_id = intent in {
+        Intent.PERSONAL_DATA,
+        Intent.PERSONAL_ELIGIBILITY,
+        Intent.WHAT_IF,
+    }
+    return {
+        "intent": intent.value,
+        "requires_student_id": requires_student_id,
+    }
 
 
 @app.post(

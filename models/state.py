@@ -17,6 +17,7 @@ class AgentState(TypedDict, total=False):
     student_id: Optional[str]      # from X-Student-Id header ONLY (R7)
     as_of_date: date
     started_at: float              # time.perf_counter() at request start
+    extractive_answer: bool
 
     # --- 1. guard ---
     refusal_reason: Optional[str]  # set => route straight to audit

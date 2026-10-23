@@ -9,7 +9,8 @@
         "current_semester": 5,
         "cgpa": null,
         "active_backlogs": 0,
-        "description": "CSE 2024 - Exact standard threshold"
+        "description": "CSE 2024 - Exact standard threshold",
+        "attendance_percentage": 75.0
     },
     {
         "email": "priya.patel@dtu.ac.in",
@@ -21,7 +22,8 @@
         "current_semester": 5,
         "cgpa": null,
         "active_backlogs": 0,
-        "description": "CSE 2024 - Medical condonation candidate"
+        "description": "CSE 2024 - Medical condonation candidate",
+        "attendance_percentage": 72.5
     },
     {
         "email": "rohan.gupta@dtu.ac.in",
@@ -33,7 +35,8 @@
         "current_semester": 5,
         "cgpa": null,
         "active_backlogs": 1,
-        "description": "ECE 2024, Failed with 39 marks - Supplementary eligible"
+        "description": "ECE 2024, Failed with 39 marks - Supplementary eligible",
+        "attendance_percentage": 78.0
     },
     {
         "email": "kabir.mehta@dtu.ac.in",
@@ -45,7 +48,8 @@
         "current_semester": 5,
         "cgpa": null,
         "active_backlogs": 1,
-        "description": "ECE 2024, Detained - Barred from supplementary"
+        "description": "ECE 2024, Detained - Barred from supplementary",
+        "attendance_percentage": 60.0
     },
     {
         "email": "aditya.rao@dtu.ac.in",
@@ -57,7 +61,8 @@
         "current_semester": 7,
         "cgpa": 6.5,
         "active_backlogs": 0,
-        "description": "CSE 2023 - Placement cut-off edge case"
+        "description": "CSE 2023 - Placement cut-off edge case",
+        "attendance_percentage": 84.0
     },
     {
         "email": "ishita.gupta@dtu.ac.in",
@@ -69,7 +74,8 @@
         "current_semester": 7,
         "cgpa": 5.8,
         "active_backlogs": 0,
-        "description": "CSE 2023"
+        "description": "CSE 2023",
+        "attendance_percentage": 92.0
     },
     {
         "email": "vivaan.bansal@dtu.ac.in",
@@ -81,7 +87,8 @@
         "current_semester": 5,
         "cgpa": 6.5,
         "active_backlogs": 0,
-        "description": "ECE 2024"
+        "description": "ECE 2024",
+        "attendance_percentage": 76.5
     },
     {
         "email": "ananya.chauhan@dtu.ac.in",
@@ -93,7 +100,8 @@
         "current_semester": 5,
         "cgpa": 7.1,
         "active_backlogs": 0,
-        "description": "CSE 2024"
+        "description": "CSE 2024",
+        "attendance_percentage": 71.0
     },
     {
         "email": "arjun.nair@dtu.ac.in",
@@ -105,7 +113,8 @@
         "current_semester": 7,
         "cgpa": 7.8,
         "active_backlogs": 0,
-        "description": "ECE 2023"
+        "description": "ECE 2023",
+        "attendance_percentage": 85.0
     },
     {
         "email": "meera.singh@dtu.ac.in",
@@ -117,7 +126,8 @@
         "current_semester": 5,
         "cgpa": 8.2,
         "active_backlogs": 0,
-        "description": "CSE 2024"
+        "description": "CSE 2024",
+        "attendance_percentage": 90.0
     },
     {
         "email": "reyansh.gupta@dtu.ac.in",
@@ -129,7 +139,8 @@
         "current_semester": 5,
         "cgpa": 9.0,
         "active_backlogs": 0,
-        "description": "ECE 2024"
+        "description": "ECE 2024",
+        "attendance_percentage": 68.0
     },
     {
         "email": "saanvi.bansal@dtu.ac.in",
@@ -141,7 +152,8 @@
         "current_semester": 7,
         "cgpa": 5.8,
         "active_backlogs": 0,
-        "description": "CSE 2023"
+        "description": "CSE 2023",
+        "attendance_percentage": 74.0
     },
     {
         "email": "krish.chauhan@dtu.ac.in",
@@ -153,7 +165,8 @@
         "current_semester": 5,
         "cgpa": 6.5,
         "active_backlogs": 0,
-        "description": "ECE 2024"
+        "description": "ECE 2024",
+        "attendance_percentage": 79.5
     },
     {
         "email": "aditi.nair@dtu.ac.in",
@@ -165,7 +178,8 @@
         "current_semester": 5,
         "cgpa": 7.1,
         "active_backlogs": 0,
-        "description": "CSE 2024"
+        "description": "CSE 2024",
+        "attendance_percentage": 83.0
     },
     {
         "email": "dhruv.singh@dtu.ac.in",
@@ -177,7 +191,8 @@
         "current_semester": 7,
         "cgpa": 7.8,
         "active_backlogs": 0,
-        "description": "ECE 2023"
+        "description": "ECE 2023",
+        "attendance_percentage": 88.5
     },
     {
         "email": "kavya.gupta@dtu.ac.in",
@@ -189,7 +204,8 @@
         "current_semester": 5,
         "cgpa": 8.2,
         "active_backlogs": 0,
-        "description": "CSE 2024"
+        "description": "CSE 2024",
+        "attendance_percentage": 92.0
     },
     {
         "email": "advait.bansal@dtu.ac.in",
@@ -201,7 +217,8 @@
         "current_semester": 5,
         "cgpa": 9.0,
         "active_backlogs": 0,
-        "description": "ECE 2024"
+        "description": "ECE 2024",
+        "attendance_percentage": 76.5
     },
     {
         "email": "diya.chauhan@dtu.ac.in",
@@ -213,7 +230,8 @@
         "current_semester": 7,
         "cgpa": 5.8,
         "active_backlogs": 0,
-        "description": "CSE 2023"
+        "description": "CSE 2023",
+        "attendance_percentage": 71.0
     },
     {
         "email": "ishaan.nair@dtu.ac.in",
@@ -225,7 +243,8 @@
         "current_semester": 5,
         "cgpa": 6.5,
         "active_backlogs": 0,
-        "description": "ECE 2024"
+        "description": "ECE 2024",
+        "attendance_percentage": 85.0
     },
     {
         "email": "nisha.singh@dtu.ac.in",
@@ -237,7 +256,8 @@
         "current_semester": 5,
         "cgpa": 7.1,
         "active_backlogs": 0,
-        "description": "CSE 2024"
+        "description": "CSE 2024",
+        "attendance_percentage": 90.0
     },
     {
         "email": "karan.gupta@dtu.ac.in",
@@ -249,7 +269,8 @@
         "current_semester": 7,
         "cgpa": 7.8,
         "active_backlogs": 0,
-        "description": "ECE 2023"
+        "description": "ECE 2023",
+        "attendance_percentage": 68.0
     },
     {
         "email": "riya.bansal@dtu.ac.in",
@@ -261,7 +282,8 @@
         "current_semester": 5,
         "cgpa": 8.2,
         "active_backlogs": 0,
-        "description": "CSE 2024"
+        "description": "CSE 2024",
+        "attendance_percentage": 74.0
     },
     {
         "email": "manav.chauhan@dtu.ac.in",
@@ -273,7 +295,8 @@
         "current_semester": 5,
         "cgpa": 9.0,
         "active_backlogs": 0,
-        "description": "ECE 2024"
+        "description": "ECE 2024",
+        "attendance_percentage": 79.5
     },
     {
         "email": "tanya.nair@dtu.ac.in",
@@ -285,7 +308,8 @@
         "current_semester": 7,
         "cgpa": 5.8,
         "active_backlogs": 0,
-        "description": "CSE 2023"
+        "description": "CSE 2023",
+        "attendance_percentage": 83.0
     },
     {
         "email": "yash.singh@dtu.ac.in",
@@ -297,7 +321,8 @@
         "current_semester": 5,
         "cgpa": 6.5,
         "active_backlogs": 0,
-        "description": "ECE 2024"
+        "description": "ECE 2024",
+        "attendance_percentage": 88.5
     },
     {
         "email": "neha.gupta@dtu.ac.in",
@@ -309,7 +334,8 @@
         "current_semester": 5,
         "cgpa": 7.1,
         "active_backlogs": 0,
-        "description": "CSE 2024"
+        "description": "CSE 2024",
+        "attendance_percentage": 92.0
     },
     {
         "email": "siddharth.bansal@dtu.ac.in",
@@ -321,7 +347,8 @@
         "current_semester": 7,
         "cgpa": 7.8,
         "active_backlogs": 0,
-        "description": "ECE 2023"
+        "description": "ECE 2023",
+        "attendance_percentage": 76.5
     },
     {
         "email": "pooja.chauhan@dtu.ac.in",
@@ -333,7 +360,8 @@
         "current_semester": 5,
         "cgpa": 8.2,
         "active_backlogs": 0,
-        "description": "CSE 2024"
+        "description": "CSE 2024",
+        "attendance_percentage": 71.0
     },
     {
         "email": "rahul.nair@dtu.ac.in",
@@ -345,7 +373,8 @@
         "current_semester": 5,
         "cgpa": 9.0,
         "active_backlogs": 0,
-        "description": "ECE 2024"
+        "description": "ECE 2024",
+        "attendance_percentage": 85.0
     },
     {
         "email": "simran.singh@dtu.ac.in",
@@ -357,6 +386,7 @@
         "current_semester": 7,
         "cgpa": 5.8,
         "active_backlogs": 0,
-        "description": "CSE 2023"
+        "description": "CSE 2023",
+        "attendance_percentage": 90.0
     }
 ]

@@ -9,7 +9,7 @@ def _flag(name: str, default: str = "false") -> bool:
 # LLM
 MOCK_LLM = _flag("MOCK_LLM")                       # test the whole pipeline without a model
 OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434")
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.1:8b")
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3:latest")
 LLM_TIMEOUT = float(os.getenv("LLM_TIMEOUT", "90"))
 LLM_RETRIES = int(os.getenv("LLM_RETRIES", "1"))   # extra attempts on bad JSON / errors
 

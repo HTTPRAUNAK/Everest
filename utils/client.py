@@ -37,7 +37,7 @@ def _ollama(system: str, user: str, json_mode: bool) -> tuple[str, int, str]:
         "model": config.OLLAMA_MODEL,
         "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
         "stream": False,
-        "options": {"temperature": 0},
+        "options": {"temperature": 0, "num_predict": 384},
     }
     if json_mode:
         body["format"] = "json"

@@ -228,6 +228,27 @@ def search(
     return passages
 
 
+def get_page_chunks(doc_id: str, page: int) -> list[dict]:
+    """Return every indexed chunk on a source page to restore split tables/lists."""
+    collection = get_collection()
+    result = collection.get(
+        where={"$and": [{"doc_id": doc_id}, {"page": page}]},
+        include=["documents", "metadatas"],
+    )
+    ids = result.get("ids", [])
+    documents = result.get("documents", [])
+    metadatas = result.get("metadatas", [])
+    chunks = []
+    for chunk_id, text, metadata in zip(ids, documents, metadatas):
+        metadata = metadata or {}
+        chunks.append({
+            **metadata,
+            "chunk_id": metadata.get("chunk_id", chunk_id),
+            "text": text or "",
+        })
+    return chunks
+
+
 def main() -> None:
     if len(sys.argv) > 1 and sys.argv[1] == "--build":
         try:
