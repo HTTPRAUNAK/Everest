@@ -1,1 +1,32 @@
-.venv\
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Generated and local data
+/data/
+
+# Local environment files and editor settings
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+
+# Build outputs
+build/
+dist/
+*.egg-info/
+
+# OS metadata
+.DS_Store
+Thumbs.db

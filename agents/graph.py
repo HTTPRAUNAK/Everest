@@ -1,15 +1,18 @@
 """LangGraph assembly for the student-services assistant."""
 from __future__ import annotations
-import os
-import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__) , '..')))
 
+import sys
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 from typing import Literal
 
 from langgraph.graph import END, START, StateGraph
 
-from agent import (
+from agents.agent import (
     audit_node,
     classify_node,
     guard_node,
@@ -76,16 +79,8 @@ def build_graph():
     return builder.compile()
 
 
-# Ready for API/service code to invoke with an AgentState-compatible mapping.
+# # Ready for API/service code to invoke with an AgentState-compatible mapping.
 graph = build_graph()
 
-print(graph.get_graph().draw_mermaid())
-
-# To render it as an image in a notebook:
-
-from IPython.display import Image, display
-from agents.graph import graph
-
-img = Image(graph.get_graph().draw_mermaid_png())
-with open("graph.png" , "wb") as f:
-    f.write(img.data)
+# if __name__ == "__main__":
+#     print(graph.get_graph().draw_mermaid())
