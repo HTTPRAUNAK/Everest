@@ -1,0 +1,24 @@
+[project]
+name = "everest"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "AnkitKumarxcodes", email = "ankitsingh17082003@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "ipython>=9.17.1",
+    "langchain>=1.4.7",
+    "langchain-google-genai>=4.4.2",
+    "langchain-groq>=1.1.3",
+    "langchain-openrouter>=0.2.9",
+    "pydantic>=2.14.1",
+]
+
+[project.scripts]
+everest = "everest:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
